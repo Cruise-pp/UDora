@@ -106,3 +106,6 @@ dmypy.json
 .cursor/
 .cursor-*
 .vscode/
+
+# .DS_Store
+.DS_Store
