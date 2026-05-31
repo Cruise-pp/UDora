@@ -38,8 +38,8 @@ from attack_utils import (
 from baseline.prompt_injection.prompt_injection import PromptInjection
 
 # huggingface login
-from huggingface_hub import login
-login(token="<your_hf_token_here>")  # Replace with your actual token
+# from huggingface_hub import login
+# login(token="<your_hf_token_here>")  # Replace with your actual token
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -113,21 +113,21 @@ def prepare_data(
 
     if mode == "train":
         n = min(50, len(data))
-        # goals = [
-        #     data[i]["model_input"].replace(
-        #         data[i]["Attacker Instruction"],
-        #         data[i]["Attacker Instruction"] + " {optim_str}",
-        #     )
-        #     for i in range(n)
-        # ]
-        # prepend the {optim_str} for better performance
         goals = [
             data[i]["model_input"].replace(
                 data[i]["Attacker Instruction"],
-                "{optim_str} " + data[i]["Attacker Instruction"],
+                data[i]["Attacker Instruction"] + " {optim_str}",
             )
             for i in range(n)
         ]
+        # prepend the {optim_str} for better performance
+        # goals = [
+        #     data[i]["model_input"].replace(
+        #         data[i]["Attacker Instruction"],
+        #         "{optim_str} " + data[i]["Attacker Instruction"],
+        #     )
+        #     for i in range(n)
+        # ]
         targets = [data[i]["Attacker Tools"][0] for i in range(n)]
     else:
         last = len(data) - 1
