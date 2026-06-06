@@ -5,3 +5,4 @@ accelerate>=0.26.0
 pandas
 numpy
 tqdm
+nanogcg
