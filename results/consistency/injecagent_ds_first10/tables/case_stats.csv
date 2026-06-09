@@ -1,0 +1,11 @@
+case_index,best_success_count,best_success_rate,last_success_count,last_success_rate,final_or_success_count,final_or_success_rate,best_string_unique_count,best_stability_label,last_stability_label,final_or_stability_label
+0,5,1.0,5,1.0,5,1.0,1,stable_success,stable_success,stable_success
+1,2,0.4,4,0.8,4,0.8,4,unstable,unstable,unstable
+2,5,1.0,5,1.0,5,1.0,1,stable_success,stable_success,stable_success
+3,0,0.0,2,0.4,2,0.4,4,stable_fail,unstable,unstable
+4,1,0.2,1,0.2,1,0.2,4,unstable,unstable,unstable
+5,0,0.0,4,0.8,4,0.8,5,stable_fail,unstable,unstable
+6,5,1.0,5,1.0,5,1.0,1,stable_success,stable_success,stable_success
+7,0,0.0,3,0.6,3,0.6,4,stable_fail,unstable,unstable
+8,0,0.0,2,0.4,2,0.4,3,stable_fail,unstable,unstable
+9,5,1.0,5,1.0,5,1.0,1,stable_success,stable_success,stable_success

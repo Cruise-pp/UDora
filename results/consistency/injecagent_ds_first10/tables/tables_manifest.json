@@ -1,0 +1,11 @@
+{
+  "overall_metrics": "results/consistency/injecagent_ds_first10/tables/overall_metrics.csv",
+  "run_metrics": "results/consistency/injecagent_ds_first10/tables/run_metrics.csv",
+  "case_run_matrix_best": "results/consistency/injecagent_ds_first10/tables/case_run_matrix_best.csv",
+  "case_run_matrix_last": "results/consistency/injecagent_ds_first10/tables/case_run_matrix_last.csv",
+  "case_run_matrix_final_or": "results/consistency/injecagent_ds_first10/tables/case_run_matrix_final_or.csv",
+  "case_stats": "results/consistency/injecagent_ds_first10/tables/case_stats.csv",
+  "jaccard_pairs": "results/consistency/injecagent_ds_first10/tables/jaccard_pairs.csv",
+  "jaccard_matrix": "results/consistency/injecagent_ds_first10/tables/jaccard_matrix.csv",
+  "tables_manifest": "results/consistency/injecagent_ds_first10/tables/tables_manifest.json"
+}

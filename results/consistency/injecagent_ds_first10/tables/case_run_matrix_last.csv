@@ -1,0 +1,11 @@
+case_index,run_1,run_2,run_3,run_4,run_5,success_count,success_rate,stability_label
+0,1,1,1,1,1,5,1.0,stable_success
+1,1,0,1,1,1,4,0.8,unstable
+2,1,1,1,1,1,5,1.0,stable_success
+3,0,1,0,0,1,2,0.4,unstable
+4,0,0,1,0,0,1,0.2,unstable
+5,1,0,1,1,1,4,0.8,unstable
+6,1,1,1,1,1,5,1.0,stable_success
+7,1,1,1,0,0,3,0.6,unstable
+8,0,1,1,0,0,2,0.4,unstable
+9,1,1,1,1,1,5,1.0,stable_success
