@@ -60,6 +60,7 @@ def should_reduce_batch_size(exception: Exception) -> bool:
         "CUDA out of memory.",  # CUDA OOM
         "cuDNN error: CUDNN_STATUS_NOT_SUPPORTED.",  # CUDNN SNAFU
         "DefaultCPUAllocator: can't allocate memory",  # CPU OOM
+        "NVML_SUCCESS == r INTERNAL ASSERT FAILED",  # MIG NVML permission error
     ]
     if isinstance(exception, RuntimeError) and len(exception.args) == 1:
         return any(err in exception.args[0] for err in _statements)

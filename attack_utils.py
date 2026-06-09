@@ -64,7 +64,7 @@ def load_model_and_tokenizer(model_id: str) -> Tuple[AutoModelForCausalLM, AutoT
     model = AutoModelForCausalLM.from_pretrained(
         model_id, 
         torch_dtype=torch.bfloat16,
-        device_map="auto"
+        device_map="cuda:0"
     )
     
     tokenizer = AutoTokenizer.from_pretrained(model_id)

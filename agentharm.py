@@ -25,14 +25,14 @@ import pickle
 from typing import List, Tuple, Dict, Any
 from tqdm import tqdm
 
-import setGPU
+# import setGPU  # disabled: incompatible with MIG GPU slices
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from attack_utils import *
 
 from inspect_evals.agentharm.benchmark import harmful_tools
 from inspect_evals.agentharm.utils import setup_tools_from_metadata
-from inspect_ai.model._model import tools_info
+from inspect_ai.model._model import get_tools_info as tools_info
 from inspect_ai.tool import Tool, ToolDef
 from inspect_ai.model._providers.hf import tools_to_mistral_format
 import random
